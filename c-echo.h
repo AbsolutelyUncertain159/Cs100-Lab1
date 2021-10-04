@@ -8,6 +8,5 @@ std::string echo(int length, char** chars) {
             ret += " ";
         }
     }
-    ret += "\n";
     return ret;
 }
