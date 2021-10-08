@@ -16,10 +16,10 @@ TEST(EchoTest, SpecialCharacters)
 {
 	char* test_val[3];
 	test_val[0] = "./c-echo";
-	test_val[1] = "!@#$%^&*()";
+	test_val[1] = "!@#$%^&*|\/""";
 	test_val[2] = "%";
 
-	EXPECT_EQ("!@#$%^&*() %", echo(3, test_val));
+	EXPECT_EQ("!@#$%^&*|\/ %", echo(3, test_val));
 }
 
 TEST(EchoTest, NumberTester)
